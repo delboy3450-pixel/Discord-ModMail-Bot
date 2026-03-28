@@ -1146,8 +1146,9 @@ async def on_resumed():
 
 if __name__ == "__main__":
     try:
-        import os
-bot.run(os.getenv("MTQ4NjcwNzg4NjA5MTUzNDUzMA.GKy0Cg.DC6z7nwEeDXVtvB5mZHtoJbvKVrFnAf0R0-U3g"))
+      import os
+bot.run(os.getenv("DISCORD_BOT_TOKEN"))
+
     except KeyboardInterrupt:
         log("info", "[SHUTDOWN] Keyboard interrupt received")
         import asyncio
